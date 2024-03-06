@@ -1,9 +1,10 @@
-import { characters } from "@/model/characters/characters"
+import { characters } from "@/model"
 import Image from "next/image"
 import Link from "next/link"
 import styles from "./style.css"
 
 const RSC = async () => {
+    //ここも書く
     const data = await characters()
 
     return (
@@ -11,6 +12,7 @@ const RSC = async () => {
             <section className="">
                 <h1>RSCでのハリーポッター図鑑</h1>
             </section>
+            {/*ここを書いてもらう*/}
             <section className={styles.itemImage}>
                 {data.map((item) => (
                     <div key={item.id}>
