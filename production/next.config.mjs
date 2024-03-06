@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
 
-export default nextConfig;
+import { createVanillaExtractPlugin } from "@vanilla-extract/next-plugin"
+
+const withVanillaExtract = createVanillaExtractPlugin()
+
+const nextConfig = {
+    images: {
+        domains: ["ik.imagekit.io"],
+    },
+}
+
+export default withVanillaExtract(nextConfig)

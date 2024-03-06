@@ -1,5 +1,5 @@
-import Image from "next/image"
+import Top from "@/view/top/top"
 
 export default function Home() {
-    return <main></main>
+    return <Top />
 }
