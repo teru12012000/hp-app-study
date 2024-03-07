@@ -7,7 +7,7 @@ export const LinkButton = () => {
         <>
             {paths.map((item, index) => (
                 <div key={index} className={styles.linkItem}>
-                    <Link href={item.path} className={styles.button}>
+                    <Link href={item.path}>
                         <button className={styles.button}>{item.name}</button>
                     </Link>
                 </div>

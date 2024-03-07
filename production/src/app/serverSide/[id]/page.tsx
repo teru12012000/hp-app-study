@@ -1,4 +1,5 @@
 import { characters } from "@/model/characters/characters"
+import RSCCharacter from "@/view/RSC/RSCCharacterDetail/RSCCharacter"
 
 interface props {
     id: string
@@ -17,7 +18,7 @@ export const generateStaticParams = async () => {
 
 //ここの部分もちょろっと
 const ClientCharacter = ({ params }: { params: props }) => {
-    return <div>{params.id}</div>
+    return <RSCCharacter id={params.id} />
 }
 
 export default ClientCharacter

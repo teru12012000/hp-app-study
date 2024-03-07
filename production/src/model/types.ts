@@ -11,7 +11,7 @@ export type HPType = {
     species: string //種
     gender: string
     house: string
-    dateOfBirth: string
+    dateOfBirth: string | null
     yearOfBirth: number
     wizard: boolean
     ancestry: string

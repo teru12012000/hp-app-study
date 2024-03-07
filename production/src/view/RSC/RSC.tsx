@@ -9,7 +9,7 @@ const RSC = async () => {
 
     return (
         <main className={styles.container}>
-            <section className="">
+            <section>
                 <h1>RSCでのハリーポッター図鑑</h1>
             </section>
             {/*ここを書いてもらう*/}

@@ -11,6 +11,10 @@ const styles = {
         ":active": {
             backgroundColor: "rgba(0,0,0,0.16)",
         },
+        ":hover": {
+            backgroundColor: "rgba(0,0,0,0.16)",
+            transition: "0.6s",
+        },
     }),
     linkItem: style({
         marginBottom: 5,
