@@ -5,7 +5,13 @@ const RSC = async () => {
     //ここも書く
     const data = await characters()
 
-    return <CharactersTemplate data={data} />
+    return (
+        <CharactersTemplate
+            title="React Server component"
+            data={data}
+            path="/serverSide/"
+        />
+    )
 }
 
 export default RSC
