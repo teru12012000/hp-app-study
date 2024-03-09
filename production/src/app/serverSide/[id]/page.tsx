@@ -1,4 +1,4 @@
-import { characters } from "@/model/characters/characters"
+import { characters } from "@/model/fetcher/characters/characters"
 import RSCCharacter from "@/view/RSC/RSCCharacterDetail/RSCCharacter"
 
 interface props {
