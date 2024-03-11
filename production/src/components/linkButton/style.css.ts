@@ -4,8 +4,8 @@ const styles = {
     button: style({
         width: 150,
         height: 50,
-        backgroundColor: "#FFFFFF",
-        border: "2px solid #black",
+        backgroundColor: "white",
+        border: `2px solid black`,
         borderRadius: 10,
         fontSize: 24,
         ":active": {
