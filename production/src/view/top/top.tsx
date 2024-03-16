@@ -1,4 +1,4 @@
-import { LinkBtn } from "@/components/LinkBtn"
+import { LinkBtn } from "@/components/linkButton"
 import styles from "./style.css"
 
 const Top = () => {
