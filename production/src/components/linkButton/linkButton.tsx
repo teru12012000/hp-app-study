@@ -2,7 +2,10 @@ import Link from "next/link"
 import { paths } from "./data"
 import styles from "./style.css"
 
-export const LinkButton = () => {
+/**
+ * This is routing button of Top page.
+ */
+export const LinkBtn = () => {
     return (
         <>
             {paths.map((item, index) => (

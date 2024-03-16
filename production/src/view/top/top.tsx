@@ -1,4 +1,4 @@
-import { LinkButton } from "@/components/linkButton"
+import { LinkBtn } from "@/components/LinkBtn"
 import styles from "./style.css"
 
 const Top = () => {
@@ -8,7 +8,7 @@ const Top = () => {
                 <h1>ハリーポッター図鑑</h1>
             </section>
             <section>
-                <LinkButton />
+                <LinkBtn />
             </section>
         </main>
     )

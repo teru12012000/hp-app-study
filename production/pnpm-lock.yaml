@@ -29,6 +29,9 @@ dependencies:
   swr:
     specifier: ^2.2.5
     version: 2.2.5(react@18.2.0)
+  webpack-merge:
+    specifier: ^5.10.0
+    version: 5.10.0
 
 devDependencies:
   '@chromatic-com/storybook':
@@ -46,6 +49,9 @@ devDependencies:
   '@storybook/addon-onboarding':
     specifier: ^8.0.0
     version: 8.0.0
+  '@storybook/addon-styling-webpack':
+    specifier: ^0.0.6
+    version: 0.0.6(webpack@5.90.3)
   '@storybook/blocks':
     specifier: ^8.0.0
     version: 8.0.0(@types/react@18.2.63)(react-dom@18.2.0)(react@18.2.0)
@@ -70,6 +76,9 @@ devDependencies:
   '@vanilla-extract/next-plugin':
     specifier: ^2.3.6
     version: 2.3.6(@types/node@20.11.24)(next@14.1.2)(webpack@5.90.3)
+  '@vanilla-extract/webpack-plugin':
+    specifier: ^2.3.7
+    version: 2.3.7(@types/node@20.11.24)(webpack@5.90.3)
   eslint:
     specifier: ^8
     version: 8.57.0
@@ -79,6 +88,9 @@ devDependencies:
   eslint-plugin-storybook:
     specifier: ^0.8.0
     version: 0.8.0(eslint@8.57.0)(typescript@5.3.3)
+  mini-css-extract-plugin:
+    specifier: ^2.8.1
+    version: 2.8.1(webpack@5.90.3)
   storybook:
     specifier: ^8.0.0
     version: 8.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -2266,6 +2278,15 @@ packages:
       ts-dedent: 2.2.0
     dev: true
 
+  /@storybook/addon-styling-webpack@0.0.6(webpack@5.90.3):
+    resolution: {integrity: sha512-JjM2FXFiHpjbJsp7nRUEMhYBRpK6ukBKsbtWzCrAGOfUgoElcGwPY8KhSKSnRknIhebonGK1bxalh3u8bGZ/dw==}
+    peerDependencies:
+      webpack: ^5.0.0
+    dependencies:
+      '@storybook/node-logger': 7.6.17
+      webpack: 5.90.3(esbuild@0.19.12)
+    dev: true
+
   /@storybook/addon-toolbars@8.0.0:
     resolution: {integrity: sha512-+nNe52DAs42VIJxJnsg3d3BAVf+svR9lvaf3dD/HgS9vBWtp2wIumDM6b05umnVuR/dXviSpdpy+gm/cCdIQGQ==}
     dev: true
@@ -2806,6 +2827,10 @@ packages:
       - webpack-dev-server
       - webpack-hot-middleware
       - webpack-plugin-serve
+    dev: true
+
+  /@storybook/node-logger@7.6.17:
+    resolution: {integrity: sha512-w59MQuXhhUNrUVmVkXhMwIg2nvFWjdDczLTwYLorhfsE36CWeUOY5QCZWQy0Qf/h+jz8Uo7Evy64qn18v9C4wA==}
     dev: true
 
   /@storybook/node-logger@8.0.0:
@@ -3517,7 +3542,7 @@ packages:
     peerDependencies:
       next: '>=12.1.7'
     dependencies:
-      '@vanilla-extract/webpack-plugin': 2.3.6(@types/node@20.11.24)(webpack@5.90.3)
+      '@vanilla-extract/webpack-plugin': 2.3.7(@types/node@20.11.24)(webpack@5.90.3)
       next: 14.1.2(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/node'
@@ -3534,8 +3559,8 @@ packages:
   /@vanilla-extract/private@1.0.3:
     resolution: {integrity: sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==}
 
-  /@vanilla-extract/webpack-plugin@2.3.6(@types/node@20.11.24)(webpack@5.90.3):
-    resolution: {integrity: sha512-GnWdVzBFDfCzNRyBoYzuwPTEWFOKFtq3Td9gla6ng+dCeJFRGW+6jT5hXvqJojw8Rk2fWzc6XA2FHPrVa7W9wA==}
+  /@vanilla-extract/webpack-plugin@2.3.7(@types/node@20.11.24)(webpack@5.90.3):
+    resolution: {integrity: sha512-xKhl7BUGqjj1eRzgASBcfKSvzIWGN1ndNT9ycUcfDz1AXZr6rok99LSj+Z2LqAnCGZGAiLsYzdQ5AYBABXV+vA==}
     peerDependencies:
       webpack: ^4.30.0 || ^5.20.2
     dependencies:
@@ -4567,7 +4592,6 @@ packages:
       is-plain-object: 2.0.4
       kind-of: 6.0.3
       shallow-clone: 3.0.1
-    dev: true
 
   /clone@1.0.4:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
@@ -6008,6 +6032,11 @@ packages:
       keyv: 4.5.4
       rimraf: 3.0.2
 
+  /flat@5.0.2:
+    resolution: {integrity: sha512-b6suED+5/3rTpUBdG1gupIl8MPFCAMA0QXwmljLhvCUKcUvdE4gWky9zpuGCcXHOsz4J9wPGNWq6OKpmIzz3hQ==}
+    hasBin: true
+    dev: false
+
   /flatted@3.3.1:
     resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
 
@@ -6724,7 +6753,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       isobject: 3.0.1
-    dev: true
 
   /is-plain-object@5.0.0:
     resolution: {integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==}
@@ -6817,7 +6845,6 @@ packages:
   /isobject@3.0.1:
     resolution: {integrity: sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /iterator.prototype@1.1.2:
     resolution: {integrity: sha512-DR33HMMr8EzwuRL8Y9D3u2BMj8+RqSE850jfGu59kS7tbmPLzGkZmVSfyCFSDxuZiEY6Rzt3T2NA/qU+NwVj1w==}
@@ -6986,7 +7013,6 @@ packages:
   /kind-of@6.0.3:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /kleur@3.0.3:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
@@ -7273,6 +7299,17 @@ packages:
   /min-indent@1.0.1:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
+    dev: true
+
+  /mini-css-extract-plugin@2.8.1(webpack@5.90.3):
+    resolution: {integrity: sha512-/1HDlyFRxWIZPI1ZpgqlZ8jMw/1Dp/dl3P0L1jtZ+zVcHqwPhGwaJwKL00WVgfnBy6PWCde9W65or7IIETImuA==}
+    engines: {node: '>= 12.13.0'}
+    peerDependencies:
+      webpack: ^5.0.0
+    dependencies:
+      schema-utils: 4.2.0
+      tapable: 2.2.1
+      webpack: 5.90.3(esbuild@0.19.12)
     dev: true
 
   /minimalistic-assert@1.0.1:
@@ -8817,7 +8854,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       kind-of: 6.0.3
-    dev: true
 
   /sharp@0.32.6:
     resolution: {integrity: sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==}
@@ -9790,6 +9826,15 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
+  /webpack-merge@5.10.0:
+    resolution: {integrity: sha512-+4zXKdx7UnO+1jaN4l2lHVD+mFvnlZQP/6ljaJVb4SZiwIKeUnrT5l0gkT8z+n4hKpC+jpOv6O9R+gLtag7pSA==}
+    engines: {node: '>=10.0.0'}
+    dependencies:
+      clone-deep: 4.0.1
+      flat: 5.0.2
+      wildcard: 2.0.1
+    dev: false
+
   /webpack-sources@3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
@@ -9902,6 +9947,10 @@ packages:
     hasBin: true
     dependencies:
       isexe: 2.0.0
+
+  /wildcard@2.0.1:
+    resolution: {integrity: sha512-CC1bOL87PIWSBhDcTrdeLo6eGT7mCFtrg0uIJtqJUFyK+eJnzl8A1niH56uu7KMa5XFrtiV+AQuHO3n7DsHnLQ==}
+    dev: false
 
   /wordwrap@1.0.0:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
