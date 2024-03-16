@@ -9,12 +9,17 @@ const styles = {
         borderRadius: 10,
         fontSize: 24,
         ":active": {
-            backgroundColor: "rgba(0,0,0,0.16)",
+            backgroundColor: "silver",
         },
         ":hover": {
-            backgroundColor: "rgba(0,0,0,0.16)",
+            backgroundColor: "silver",
             transition: "0.6s",
         },
+    }),
+    linkBox: style({
+        width: 350,
+        display: "flex",
+        justifyContent: "space-between",
     }),
     linkItem: style({
         marginBottom: 5,

@@ -8,10 +8,12 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_acef0d3375ae8f5"
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.14.1",
+    "chromatic": "^11.0.8",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-unused-imports": "^3.1.0",
     "framer-motion": "^11.0.8",

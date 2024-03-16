@@ -8,6 +8,9 @@ dependencies:
   '@vanilla-extract/css':
     specifier: ^1.14.1
     version: 1.14.1
+  chromatic:
+    specifier: ^11.0.8
+    version: 11.0.8
   eslint-plugin-import:
     specifier: ^2.29.1
     version: 2.29.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
@@ -4525,7 +4528,6 @@ packages:
         optional: true
       '@chromatic-com/playwright':
         optional: true
-    dev: true
 
   /chrome-trace-event@1.0.3:
     resolution: {integrity: sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==}

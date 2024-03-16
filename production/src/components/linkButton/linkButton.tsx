@@ -7,7 +7,7 @@ import styles from "./style.css"
  */
 export const LinkBtn = () => {
     return (
-        <>
+        <div className={styles.linkBox}>
             {paths.map((item, index) => (
                 <div key={index} className={styles.linkItem}>
                     <Link href={item.path}>
@@ -15,6 +15,6 @@ export const LinkBtn = () => {
                     </Link>
                 </div>
             ))}
-        </>
+        </div>
     )
 }
