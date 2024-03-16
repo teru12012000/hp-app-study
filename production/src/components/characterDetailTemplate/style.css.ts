@@ -6,6 +6,9 @@ const styles = {
         margin: "20px auto",
         textAlign: "center",
     }),
+    title: style({
+        color: "white",
+    }),
     imageSection: style({
         width: "100%",
         display: "flex",

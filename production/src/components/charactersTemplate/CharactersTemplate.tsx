@@ -12,20 +12,21 @@ interface props {
 export const CharactersTemplate = (props: props) => {
     return (
         <main className={styles.container}>
-            <section>
+            <section className={styles.title}>
                 <h1>{props.title}でのハリーポッター図鑑</h1>
             </section>
             {/*ここを書いてもらう*/}
             <section className={styles.itemImage}>
                 {props.data.map((item) => (
                     <div key={item.id}>
+                        <Image
+                            src={item.image}
+                            width={163}
+                            height={227}
+                            alt={item.name}
+                        />
                         <Link href={`${props.path}${item.id}`}>
-                            <Image
-                                src={item.image}
-                                width={163}
-                                height={227}
-                                alt={item.name}
-                            />
+                            <button className={styles.button}>detail</button>
                         </Link>
                     </div>
                 ))}
