@@ -15,14 +15,16 @@ const styles = {
         justifyContent: "center",
     }),
     imageBox: style({
-        width: 163,
-        height: 277,
+        width: 168,
+        height: 230,
+        border: "2px solid white",
     }),
     tableSection: style({
         display: "flex",
         justifyContent: "center",
     }),
     table: style({
+        marginTop: 30,
         width: 300,
         color: "white",
     }),
