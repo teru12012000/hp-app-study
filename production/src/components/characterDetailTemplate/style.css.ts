@@ -24,6 +24,7 @@ const styles = {
     }),
     table: style({
         width: 300,
+        color: "white",
     }),
 }
 
