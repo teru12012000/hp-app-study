@@ -21,7 +21,6 @@ const styles = {
         width: 350,
         display: "flex",
         justifyContent: "space-between",
-        backgroundColor: "aqua",
         "@media": {
             "screen and (max-width:349px)": {
                 width: "100%",

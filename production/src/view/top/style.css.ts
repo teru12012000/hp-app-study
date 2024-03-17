@@ -8,12 +8,12 @@ const styles = {
     }),
     linkBox: style({
         width: "100vw",
-        backgroundColor: "red",
         display: "flex",
         justifyContent: "center",
         "@media": {
             "screen and (max-width:349px)": {
                 display: "block",
+                textAlign: "center",
             },
         },
     }),
