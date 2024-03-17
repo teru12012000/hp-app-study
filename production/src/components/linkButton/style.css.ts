@@ -8,6 +8,7 @@ const styles = {
         border: `2px solid black`,
         borderRadius: 10,
         fontSize: 24,
+        color: "black",
         ":active": {
             backgroundColor: "silver",
         },
