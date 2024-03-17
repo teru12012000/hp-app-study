@@ -9,6 +9,7 @@ const styles = {
         color: "white",
         fontSize: 24,
     }),
+
     button: style({
         width: 150,
         height: 50,

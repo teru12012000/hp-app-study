@@ -1,7 +1,7 @@
 import RSC from "@/view/RSC/RSC"
 
-const ClientSide = () => {
+const ServerSide = () => {
     return <RSC />
 }
 
-export default ClientSide
+export default ServerSide

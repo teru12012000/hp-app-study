@@ -1,15 +1,21 @@
 import Image from "next/image"
 import styles from "./style.css"
 import { HPType } from "@/model/fetcher"
+import { Loading } from "../loading"
 
 interface props {
     data: HPType | null
+    isLoading?: boolean
 }
 
 export const CharacterDetailTemplate = (props: props) => {
+    const { isLoading = false } = props
+
     return (
         <>
-            {props.data !== null && (
+            {props.data === null || props.isLoading ? (
+                <Loading />
+            ) : (
                 <main className={styles.container}>
                     <section className={styles.imageSection}>
                         <picture className={styles.imageBox}>

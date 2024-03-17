@@ -1,5 +1,5 @@
 import { characters } from "@/model/fetcher"
-import { CharactersTemplate } from "@/components/charactersTemplate"
+import { CharactersTemplate } from "@/components/layout/charactersTemplate"
 
 const RSC = async () => {
     //ここも書く

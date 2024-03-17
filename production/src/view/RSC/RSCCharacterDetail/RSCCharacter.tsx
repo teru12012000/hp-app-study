@@ -1,4 +1,4 @@
-import { CharacterDetailTemplate } from "@/components/characterDetailTemplate/characterDetailTemplate"
+import { CharacterDetailTemplate } from "@/components/layout/characterDetailTemplate/characterDetailTemplate"
 import { character } from "@/model/fetcher"
 
 interface props {

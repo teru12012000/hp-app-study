@@ -1,40 +1,15 @@
 {
-    "extends": [
-        "next/core-web-vitals",
-        "plugin:import/warnings",
-        "plugin:react-hooks/recommended",
-        "plugin:@next/next/recommended",
-        "plugin:import/typescript",
-        "plugin:react/recommended",
-        "prettier",
-        "plugin:storybook/recommended"
-    ],
-    "plugins": [
-        "import",
-        "react",
-        "jsx-a11y",
-        "unused-imports"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "project": [
-            "./tsconfig.json"
-        ],
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "sourceType": "module"
-    },
+    "extends": "next/core-web-vitals",
+    "plugins": ["import", "unused-imports"],
     "rules": {
         "import/order": [
             "error",
             {
                 "alphabetize": {
-                    "order": "asc"
+                    "order": "asc", // 昇順にソート
+                    "caseInsensitive": true // 小文字大文字を区別する
                 }
             }
-        ],
-        "unused-imports/no-unused-import-ts": "warn"
+        ]
     }
 }
