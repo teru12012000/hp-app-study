@@ -13,7 +13,7 @@ export const CharacterDetailTemplate = (props: props) => {
 
     return (
         <>
-            {props.data === null || props.isLoading ? (
+            {props.data === null || isLoading ? (
                 <Loading />
             ) : (
                 <main className={styles.container}>
