@@ -20,11 +20,7 @@ const RCCCharacterDetail = () => {
         setIsDifferent(id !== resData?.id || isLoading)
     }, [resData])
 
-    return (
-        <>
-            <CharacterDetailTemplate data={resData} isLoading={isDifferent} />
-        </>
-    )
+    return <CharacterDetailTemplate data={resData} isLoading={isDifferent} />
 }
 
 export default RCCCharacterDetail
