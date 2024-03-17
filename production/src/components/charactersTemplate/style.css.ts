@@ -31,6 +31,11 @@ const styles = {
         rowGap: 20,
         width: "75%",
         margin: "20px auto",
+        "@media": {
+            "screen and (max-width:767px)": {
+                gridTemplateColumns: "repeat(2,1fr)",
+            },
+        },
     }),
 }
 
