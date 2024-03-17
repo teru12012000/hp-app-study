@@ -1,8 +1,8 @@
-import { HPType } from "@/model/fetcher"
 import Image from "next/image"
 import Link from "next/link"
-import styles from "./style.css"
 import { Loading } from "../loading"
+import styles from "./style.css"
+import { HPType } from "@/model/fetcher"
 
 interface props {
     title: string

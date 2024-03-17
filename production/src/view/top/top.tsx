@@ -1,7 +1,7 @@
-import { LinkBtn } from "@/components/linkButton"
-import styles from "./style.css"
 import Image from "next/image"
+import styles from "./style.css"
 import IMG from "@/assets/backgroundImage.png"
+import { LinkBtn } from "@/components/linkButton"
 
 const Top = () => {
     return (
