@@ -9,6 +9,7 @@ const styles = {
         borderRadius: 10,
         fontSize: 24,
         color: "black",
+        cursor: "pointer",
         ":active": {
             backgroundColor: "silver",
         },

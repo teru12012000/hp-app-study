@@ -25,6 +25,7 @@ const styles = {
             backgroundColor: "silver",
             transition: "0.6s",
         },
+        cursor: "pointer",
     }),
     itemImage: style({
         display: "grid",
