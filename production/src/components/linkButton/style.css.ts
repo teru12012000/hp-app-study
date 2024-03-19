@@ -30,9 +30,6 @@ const styles = {
             },
         },
     }),
-    linkItem: style({
-        //marginBottom: 5,
-    }),
 }
 
 export default styles
