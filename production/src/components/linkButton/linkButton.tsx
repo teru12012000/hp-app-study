@@ -9,7 +9,7 @@ export const LinkBtn = () => {
     return (
         <div className={styles.linkBox}>
             {paths.map((item, index) => (
-                <div key={index} className={styles.linkItem}>
+                <div key={index}>
                     <Link href={item.path}>
                         <button className={styles.button}>{item.name}</button>
                     </Link>
