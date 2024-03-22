@@ -3,7 +3,7 @@
 import { CharactersTemplate } from "@/components/layout/charactersTemplate"
 import { useCharacters } from "@/model/hooks"
 
-const RCC = () => {
+export const RCC = () => {
     const { resData, isLoading } = useCharacters()
 
     return (
@@ -15,5 +15,3 @@ const RCC = () => {
         />
     )
 }
-
-export default RCC

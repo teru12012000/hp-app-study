@@ -1,4 +1,4 @@
-import RSC from "@/view/RSC/RSC"
+import { RSC } from "@/view/RSC/RSC"
 
 const ServerSide = () => {
     return <RSC />

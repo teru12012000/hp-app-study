@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react"
 import { CharacterDetailTemplate } from "@/components/layout/characterDetailTemplate/characterDetailTemplate"
 import { useCharacterDetail } from "@/model/hooks"
 
-const RCCCharacterDetail = () => {
+export const RCCCharacterDetail = () => {
     const searchParam = useSearchParams()
     const id = searchParam.get("id")
     const [isDifferent, setIsDifferent] = useState<boolean>(true)
@@ -24,5 +24,3 @@ const RCCCharacterDetail = () => {
 
     return <CharacterDetailTemplate data={resData} isLoading={isDifferent} />
 }
-
-export default RCCCharacterDetail

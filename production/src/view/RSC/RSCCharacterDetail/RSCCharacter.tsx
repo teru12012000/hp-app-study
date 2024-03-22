@@ -5,10 +5,8 @@ interface props {
     id: string
 }
 
-const RSCCharacter = async (props: props) => {
+export const RSCCharacter = async (props: props) => {
     const data = await character(props.id)
 
     return <CharacterDetailTemplate data={data} />
 }
-
-export default RSCCharacter

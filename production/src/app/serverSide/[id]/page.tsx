@@ -1,5 +1,5 @@
 import { characters } from "@/model/fetcher/characters/characters"
-import RSCCharacter from "@/view/RSC/RSCCharacterDetail/RSCCharacter"
+import { RSCCharacter } from "@/view/RSC/RSCCharacterDetail"
 
 interface props {
     id: string

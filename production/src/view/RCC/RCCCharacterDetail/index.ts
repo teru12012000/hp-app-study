@@ -1,0 +1,1 @@
+export { RCCCharacterDetail } from "./RCCCharacterDetail"

@@ -3,7 +3,7 @@ import styles from "./style.css"
 import IMG from "@/assets/backgroundImage.png"
 import { LinkBtn } from "@/components/linkButton"
 
-const Top = () => {
+export const Top = () => {
     return (
         <main className={styles.container}>
             <section
@@ -34,5 +34,3 @@ const Top = () => {
         </main>
     )
 }
-
-export default Top

@@ -1,7 +1,7 @@
 import { CharactersTemplate } from "@/components/layout/charactersTemplate"
 import { characters } from "@/model/fetcher"
 
-const RSC = async () => {
+export const RSC = async () => {
     //ここも書く
     const data = await characters()
 
@@ -13,5 +13,3 @@ const RSC = async () => {
         />
     )
 }
-
-export default RSC

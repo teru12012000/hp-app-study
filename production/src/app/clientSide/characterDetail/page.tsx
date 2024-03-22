@@ -1,7 +1,7 @@
 "use client"
 
 import { Suspense } from "react"
-import RCCCharacterDetail from "@/view/RCC/RCCCharacterDetail/RCCCharacterDetail"
+import { RCCCharacterDetail } from "@/view/RCC/RCCCharacterDetail/RCCCharacterDetail"
 
 const RCS = () => {
     return (
