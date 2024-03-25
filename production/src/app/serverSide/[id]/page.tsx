@@ -10,7 +10,7 @@ export const generateStaticParams = async () => {
     const data = await characters()
 
     const paths = data.map((item) => {
-        return { id: item.id }
+        return { id: item.fullName }
     })
 
     return paths
