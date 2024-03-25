@@ -15,8 +15,8 @@ const styles = {
         justifyContent: "center",
     }),
     imageBox: style({
-        width: 168,
-        height: 230,
+        width: 180,
+        height: 255,
         border: "2px solid white",
     }),
     tableSection: style({

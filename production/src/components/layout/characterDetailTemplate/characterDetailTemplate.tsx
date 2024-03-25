@@ -22,8 +22,8 @@ export const CharacterDetailTemplate = (props: props) => {
                             <Image
                                 src={props.data.image}
                                 alt={props.data.fullName}
-                                width={163}
-                                height={227}
+                                width={175}
+                                height={250}
                             />
                         </picture>
                     </section>

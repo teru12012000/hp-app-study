@@ -28,8 +28,8 @@ export const CharactersTemplate = (props: props) => {
                         <div key={item.index}>
                             <Image
                                 src={item.image}
-                                width={163}
-                                height={227}
+                                width={175}
+                                height={250}
                                 alt={item.fullName}
                             />
                             <Link href={`${props.path}${item.fullName}`}>
