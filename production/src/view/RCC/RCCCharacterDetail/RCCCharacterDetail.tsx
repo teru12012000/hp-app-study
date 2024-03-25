@@ -10,15 +10,15 @@ export const RCCCharacterDetail = () => {
     const id = searchParam.get("id")
     const [isDifferent, setIsDifferent] = useState<boolean>(true)
 
-    const { resData, isLoading } = useCharacterDetail(id as string)
+    const { resData } = useCharacterDetail(id as string)
 
     /**
      * ここはキャッシュが効いちゃってるのでバグが起こります。
      * 検証したければこの部分を削除してみてください！
      */
     useEffect(() => {
-        console.log(id, resData)
-        if (resData !== null && id !== null) setIsDifferent(id !== resData.id)
+        if (resData !== null && id !== null)
+            setIsDifferent(id !== String(resData.fullName))
         else setIsDifferent(true)
     }, [resData, id])
 

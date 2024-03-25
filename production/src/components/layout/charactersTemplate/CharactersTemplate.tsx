@@ -25,14 +25,14 @@ export const CharactersTemplate = (props: props) => {
             ) : (
                 <section className={styles.itemImage}>
                     {props.data.map((item) => (
-                        <div key={item.id}>
+                        <div key={item.index}>
                             <Image
                                 src={item.image}
                                 width={163}
                                 height={227}
-                                alt={item.name}
+                                alt={item.fullName}
                             />
-                            <Link href={`${props.path}${item.id}`}>
+                            <Link href={`${props.path}${item.fullName}`}>
                                 <button className={styles.button}>
                                     detail
                                 </button>

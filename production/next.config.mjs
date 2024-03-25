@@ -6,7 +6,7 @@ const withVanillaExtract = createVanillaExtractPlugin()
 
 const nextConfig = {
     images: {
-        domains: ["ik.imagekit.io"],
+        domains: ["raw.githubusercontent.com"],
     },
 }
 

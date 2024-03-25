@@ -1,5 +1,7 @@
 import { RCC } from "@/view/RCC/RCC"
 
-export const ClientSide = () => {
+const ClientSide = () => {
     return <RCC />
 }
+
+export default ClientSide

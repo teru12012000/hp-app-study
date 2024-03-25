@@ -21,7 +21,7 @@ export const CharacterDetailTemplate = (props: props) => {
                         <picture className={styles.imageBox}>
                             <Image
                                 src={props.data.image}
-                                alt={props.data.id}
+                                alt={props.data.fullName}
                                 width={163}
                                 height={227}
                             />
@@ -36,37 +36,15 @@ export const CharacterDetailTemplate = (props: props) => {
                             <tbody>
                                 <tr>
                                     <td>name</td>
-                                    <td>{props.data.name}</td>
-                                </tr>
-
-                                {props.data.alternate_names.map(
-                                    (item, index) => (
-                                        <tr key={index}>
-                                            {index === 0 ? (
-                                                <td>alterant names</td>
-                                            ) : (
-                                                <td></td>
-                                            )}
-                                            <td>{item}</td>
-                                        </tr>
-                                    ),
-                                )}
-
-                                <tr>
-                                    <td>actor</td>
-                                    <td>{props.data.actor}</td>
+                                    <td>{props.data.fullName}</td>
                                 </tr>
                                 <tr>
-                                    <td>gender</td>
-                                    <td>{props.data.gender}</td>
+                                    <td>nickname</td>
+                                    <td>{props.data.nickname}</td>
                                 </tr>
                                 <tr>
                                     <td>data of birth</td>
-                                    <td>
-                                        {props.data.dateOfBirth !== null
-                                            ? props.data.dateOfBirth
-                                            : "unknown"}
-                                    </td>
+                                    <td>{props.data.birthdate}</td>
                                 </tr>
                             </tbody>
                         </table>
