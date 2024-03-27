@@ -19,7 +19,6 @@ export const CharactersTemplate = (props: props) => {
             <section className={styles.title}>
                 <h1>{props.title}でのハリーポッター図鑑</h1>
             </section>
-            {/*ここを書いてもらう*/}
             {isLoading ? (
                 <Loading />
             ) : (
