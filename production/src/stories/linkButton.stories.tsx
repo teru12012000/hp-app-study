@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/react"
-import { LinkBtn } from "@/components/linkButton"
+import type { Meta, StoryFn, StoryObj } from "@storybook/react"
+import { LinkBtn } from "@/components/ui/linkButton"
 
 const meta = {
     title: "LinkBtn",
@@ -14,7 +14,9 @@ const meta = {
 
 export default meta
 
-type Story = StoryObj<typeof meta>
+type Story = StoryFn<typeof meta>
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary: Story = {}
+export const Primary: Story = () => {
+    return <LinkBtn />
+}

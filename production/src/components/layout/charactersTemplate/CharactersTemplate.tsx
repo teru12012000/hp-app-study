@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Loading } from "../loading"
 import styles from "./style.css"
 import { HPType } from "@/model/fetcher"
+import { BackButton } from "@/components/ui/backButton"
 
 interface props {
     title: string
