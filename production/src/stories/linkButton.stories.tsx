@@ -2,7 +2,7 @@ import type { Meta, StoryFn, StoryObj } from "@storybook/react"
 import { LinkBtn } from "@/components/ui/linkButton"
 
 const meta = {
-    title: "LinkBtn",
+    title: "components/ui/LinkBtn",
     component: LinkBtn,
     parameters: {
         nextjs: {

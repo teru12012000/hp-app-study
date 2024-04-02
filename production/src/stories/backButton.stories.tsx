@@ -2,7 +2,7 @@ import type { Meta, StoryFn } from "@storybook/react"
 import { BackButton } from "@/components/ui/backButton"
 
 const meta = {
-    title: "BackButton",
+    title: "components/ui/BackButton",
     component: BackButton,
     parameters: {
         nextjs: {
