@@ -9,6 +9,15 @@ const styles = {
         color: "white",
         fontSize: 24,
     }),
+    header: style({
+        display: "flex",
+        justifyContent: "center",
+    }),
+    buckButton: style({
+        padding: 10,
+        position: "absolute",
+        left: 0,
+    }),
 
     button: style({
         width: 150,
