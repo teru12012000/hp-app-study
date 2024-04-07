@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Loading } from "../loading"
-import styles from "./style.css"
 import { HPType } from "@/model/fetcher"
+import styles from "./style.css"
 
 interface props {
     data: HPType | null
