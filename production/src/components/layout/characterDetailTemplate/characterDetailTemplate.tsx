@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Loading } from "../loading"
 import styles from "./style.css"
+import { BackButton } from "@/components/ui/backButton"
 import { HPType } from "@/model/fetcher"
 
 interface props {
@@ -17,6 +18,9 @@ export const CharacterDetailTemplate = (props: props) => {
                 <Loading />
             ) : (
                 <main className={styles.container}>
+                    <div className={styles.button}>
+                        <BackButton />
+                    </div>
                     <section className={styles.imageSection}>
                         <picture className={styles.imageBox}>
                             <Image
