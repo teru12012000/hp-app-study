@@ -18,9 +18,9 @@ export const CharacterDetailTemplate = (props: props) => {
                 <Loading />
             ) : (
                 <main className={styles.container}>
-                    <div className={styles.button}>
+                    <section className={styles.button}>
                         <BackButton />
-                    </div>
+                    </section>
                     <section className={styles.imageSection}>
                         <picture className={styles.imageBox}>
                             <Image
