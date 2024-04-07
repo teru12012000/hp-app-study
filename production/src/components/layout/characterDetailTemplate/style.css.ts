@@ -2,9 +2,13 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     container: style({
-        width: "75%",
+        width: "95%",
         margin: "20px auto",
         textAlign: "center",
+    }),
+    button: style({
+        display: "flex",
+        justifyContent: "flex-start",
     }),
     title: style({
         color: "white",
