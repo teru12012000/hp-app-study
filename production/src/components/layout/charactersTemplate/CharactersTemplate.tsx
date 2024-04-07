@@ -18,14 +18,15 @@ export const CharactersTemplate = (props: props) => {
 
     return (
         <main className={styles.container}>
-            <section className={styles.title}>
-                <div className={styles.header}>
-                    <div className={styles.buckButton}>
-                        <BackButton />
-                    </div>
+            <header className={styles.header}>
+                <div className={styles.buckButton}>
+                    <BackButton />
+                </div>
+                <div className={styles.titleTextBox}>
                     <h1>{props.title}でのハリーポッター図鑑</h1>
                 </div>
-            </section>
+            </header>
+
             {isLoading ? (
                 <Loading />
             ) : (

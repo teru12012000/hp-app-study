@@ -5,9 +5,10 @@ const styles = {
         width: "100vw",
         textAlign: "center",
     }),
-    title: style({
+    titleTextBox: style({
         color: "white",
-        fontSize: 24,
+        fontSize: 20,
+        width: "87%",
     }),
     header: style({
         display: "flex",
