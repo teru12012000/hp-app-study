@@ -19,7 +19,7 @@ export const CharactersTemplate = (props: props) => {
     return (
         <main className={styles.container}>
             <header className={styles.header}>
-                <div className={styles.buckButton}>
+                <div className={styles.backButton}>
                     <BackButton />
                 </div>
                 <div className={styles.titleTextBox}>
@@ -30,22 +30,28 @@ export const CharactersTemplate = (props: props) => {
             {isLoading ? (
                 <Loading />
             ) : (
-                <section className={styles.itemImage}>
-                    {props.data.map((item) => (
-                        <div key={item.index}>
-                            <Image
-                                src={item.image}
-                                width={175}
-                                height={250}
-                                alt={item.fullName}
-                            />
-                            <Link href={`${props.path}${item.fullName}`}>
-                                <button className={styles.button}>
-                                    detail
-                                </button>
-                            </Link>
-                        </div>
-                    ))}
+                <section>
+                    <div className={styles.itemImage}>
+                        {props.data.map((item) => (
+                            <div key={item.index}>
+                                <Image
+                                    src={item.image}
+                                    width={175}
+                                    height={250}
+                                    alt={item.fullName}
+                                />
+                                <div>
+                                    <Link
+                                        href={`${props.path}${item.fullName}`}
+                                    >
+                                        <button className={styles.button}>
+                                            detail
+                                        </button>
+                                    </Link>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </section>
             )}
         </main>

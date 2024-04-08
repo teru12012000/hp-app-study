@@ -7,17 +7,15 @@ const styles = {
     }),
     titleTextBox: style({
         color: "white",
-        fontSize: 20,
-        width: "87%",
+        fontSize: 18,
     }),
     header: style({
         display: "flex",
         justifyContent: "center",
     }),
-    buckButton: style({
-        padding: 10,
-        position: "absolute",
-        left: 0,
+    backButton: style({
+        marginTop: 10,
+        marginRight: 10,
     }),
 
     button: style({
@@ -28,14 +26,11 @@ const styles = {
         borderRadius: 10,
         fontSize: 24,
         color: "black",
-        ":active": {
-            backgroundColor: "silver",
-        },
-        ":hover": {
-            backgroundColor: "silver",
-            transition: "0.6s",
-        },
         cursor: "pointer",
+    }),
+    itemContainer: style({
+        display: "flex",
+        justifyContent: "center",
     }),
     itemImage: style({
         display: "grid",
@@ -46,6 +41,9 @@ const styles = {
         "@media": {
             "screen and (max-width:767px)": {
                 gridTemplateColumns: "repeat(2,1fr)",
+            },
+            "screen and (max-width:440px)": {
+                display: "block",
             },
         },
     }),
